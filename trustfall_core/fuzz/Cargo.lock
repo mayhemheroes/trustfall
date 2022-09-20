@@ -165,17 +165,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "e88a8acf291dafb59c2d96e8f59828f3838bb1a70398823ade51a84de6a6deed"
 
 [[package]]
-name = "filetests_proc_macro"
-version = "0.2.0"
-dependencies = [
- "globset",
- "proc-macro2",
- "quote",
- "syn",
- "walkdir",
-]
-
-[[package]]
 name = "fnv"
 version = "1.0.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -521,13 +510,12 @@ dependencies = [
 
 [[package]]
 name = "trustfall_core"
-version = "0.1.0"
+version = "0.0.3"
 dependencies = [
  "async-graphql-parser",
  "async-graphql-value",
  "camino",
  "chrono",
- "filetests_proc_macro",
  "itertools",
  "lazy_static",
  "maplit",
@@ -537,6 +525,7 @@ dependencies = [
  "serde_json",
  "smallvec",
  "thiserror",
+ "trustfall_filetests_macros",
 ]
 
 [[package]]
@@ -551,6 +540,17 @@ dependencies = [
  "ron 0.7.0",
  "serde",
  "trustfall_core",
+]
+
+[[package]]
+name = "trustfall_filetests_macros"
+version = "0.2.0"
+dependencies = [
+ "globset",
+ "proc-macro2",
+ "quote",
+ "syn",
+ "walkdir",
 ]
 
 [[package]]

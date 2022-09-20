@@ -1,0 +1,7 @@
+project: trustfall
+target: frontend-numbers
+
+cmds:
+  - cmd: /frontend_numbers
+  - cmd: /frontend_numbers_no_inst @@
+    libfuzzer: false
