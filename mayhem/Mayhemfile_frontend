@@ -1,0 +1,7 @@
+# Mayhem target: trustfall's frontend fuzzer (libFuzzer, built by mayhem/build.sh via cargo-fuzz at
+# /mayhem/frontend). Drives trustfall_core::frontend::parse_doc (query string -> compiled IR).
+project: trustfall
+target: frontend
+cmds:
+  - cmd: /mayhem/frontend
+    libfuzzer: true
