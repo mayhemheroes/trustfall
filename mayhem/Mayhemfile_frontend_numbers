@@ -1,0 +1,8 @@
+# Mayhem target: trustfall's frontend_numbers fuzzer (libFuzzer, built by mayhem/build.sh via
+# cargo-fuzz at /mayhem/frontend_numbers). Target name `frontend-numbers` preserved from the old fork
+# for Mayhem-server corpus/defect continuity.
+project: trustfall
+target: frontend-numbers
+cmds:
+  - cmd: /mayhem/frontend_numbers
+    libfuzzer: true
